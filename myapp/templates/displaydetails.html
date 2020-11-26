@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display details</title>
+</head>
+<body>
+{% for item in details %}
+<!--<a href="{{item.id}}">{{item.student_name}}</a>-->
+<a href="{% url 'detail' item.id %}">{{item.student_name}}</a>
+{% endfor %}
+
+</body>
+</html>
